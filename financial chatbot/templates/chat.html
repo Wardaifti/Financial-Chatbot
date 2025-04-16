@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FinanceBot 💰</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="overlay">
+        <div class="chat-container">
+            <h1>📈 FinanceBot</h1>
+            <form method="post">
+                <input type="text" name="user_input" placeholder="Ask about Apple stock, Tesla revenue..." required>
+                <button type="submit">Ask</button>
+            </form>
+            <div class="response">
+                {% if response %}
+                    <p>{{ response|safe }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

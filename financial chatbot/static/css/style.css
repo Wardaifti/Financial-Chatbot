@@ -1,0 +1,72 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full screen centered layout */
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d2e0f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Chat container styling */
+.chat-container {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Input styling */
+form input {
+    width: 75%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+form button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+form button:hover {
+    background-color: #2c80b4;
+}
+
+/* Bot response box */
+.response {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
